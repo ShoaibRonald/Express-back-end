@@ -1,4 +1,5 @@
 const express = require("express")
+const ConnectDB = require("./Config/db")
 const app = express()
 
 const PORT = 3000||5000
@@ -10,12 +11,7 @@ app.get("/",(req,res)=>{
     })
 })
 
-
-
-
-
-
-
+ConnectDB()
 
 
 
